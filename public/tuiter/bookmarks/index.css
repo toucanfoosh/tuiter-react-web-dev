@@ -1,0 +1,187 @@
+:root {
+    --tuitblue: rgb(29, 161, 242);
+    --tuitdarkergray: rgb(47, 51, 54);
+    --tuitdarkgray: rgb(57, 57, 57);
+    --tuitlightgray: rgb(108, 118, 125);
+    --tuitred: rgb(200, 42, 42);
+    --tuitlargefont: 20px;
+    --tuitregfont: 15px;
+    --tuitsmallfont: 13px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+.wd-overall {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.wd-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 700px;
+}
+
+.wd-left-border {
+    width: 10%;
+    height: 200vh;
+    margin-top: -10px;
+    border-right: 1px solid;
+    border-color: var(--tuitdarkergray);
+}
+
+.wd-right-border {
+    width: 10%;
+    min-width: 30px;
+    height: 200vh;
+    margin-top: -10px;
+    border-left: 1px solid;
+    border-color: var(--tuitdarkergray);
+}
+
+.wd-divider {
+    height: 1px;
+    border-top: 1px solid;
+    border-color: var(--tuitdarkergray);
+}
+
+.wd-overall {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.wd-heading {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    margin-bottom: 12px;
+}
+
+.wd-heading-font {
+    color: white;
+    font-size: var(--tuitlargefont);
+    font-weight: bold;
+}
+
+.wd-subheading-font {
+    color: var(--tuitlightgray);
+    font-size: var(--tuitsmallfont);
+}
+
+.wd-post-image {
+    border-radius: 20px;
+    border-style: solid;
+    border-color: var(--tuitdarkergray);
+    border-width: 1px;
+    overflow: hidden;
+}
+
+.wd-image {
+    width: 504px;
+    height: 264px;
+    /* border-top-left-radius: 20px;
+    border-top-right-radius: 20px; */
+}
+
+.wd-profile-picture {
+    width: 48px;
+    height: 48px;
+    border-radius: 100px;
+    margin-left: 16px;
+}
+
+.wd-post {
+    display: flex;
+    flex-direction: row;
+    margin-top: 12px;
+}
+
+.wd-post-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 506px;
+    margin-left: 16px;
+    margin-right: 12px;
+}
+
+.wd-nickname {
+    color: white;
+    font-weight: bold;
+    font-size: var(--tuitregfont);
+}
+
+.wd-username-date {
+    color: var(--tuitlightgray);
+    font-size: var(--tuitregfont);
+}
+
+.wd-tweet-p {
+    color: white;
+    font-size: var(--tuitregfont);
+    margin-bottom: 12px;
+}
+
+.wd-image-header {
+    color: white;
+    font-size: var(--tuitregfont);
+    padding: 12px;
+}
+
+.wd-image-subtext {
+    color: var(--tuitlightgray);
+    font-size: var(--tuitregfont);
+    padding: 12px;
+    padding-top: 0px;
+}
+
+.wd-stats {
+    display: flex;
+    flex-direction: row;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    justify-content: space-between;
+    padding-right: 70px;
+}
+
+.wd-substat {
+    font-size: var(--tuitregfont);
+    color:var(--tuitlightgray)
+}
+.wd-interacted {
+    font-size: var(--tuitregfont);
+    color:var(--tuitred);
+}
+.wd-number {
+    margin-left: 12px;
+}
