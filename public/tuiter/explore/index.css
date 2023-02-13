@@ -56,6 +56,9 @@ body {
     color: white;
 }
 
+.wd-color-clear {
+    color: var(--tuitclear);
+}
 
 .wd-font-lg {
     font-size: var(--tuitlargefont);
@@ -182,4 +185,14 @@ a:hover {
 
 .wd-follow-btn:hover {
     background-color: var(--tuitdarkergray);
+}
+
+.wd-text-center {
+    text-align: center;
+}
+
+@media (min-width: 1200px) {
+    .wd-text-lg-start {
+        text-align: left;
+    }
 }
