@@ -1,7 +1,5 @@
 const PostSummaryItem = (post) => {
   return `
-    <!-- posts -->
-    <div class="wd-ma">
         <!-- article post 1 -->
         <div class="wd-ma wd-bottomline p-2 d-flex flow-column justify-content-between wd-color-text">
             <!-- text content -->
@@ -25,7 +23,7 @@ const PostSummaryItem = (post) => {
             <div class="p-2">
                 <img src=${post.image} class="rounded wd-img-sq-100" alt="bongocat in space">
             </div>
-        </div>
+            </div>
     `;
 };
 

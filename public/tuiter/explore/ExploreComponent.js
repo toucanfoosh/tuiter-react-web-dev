@@ -2,7 +2,6 @@ import PostSummaryList from "../PostSummaryList/index.js";
 
 const ExploreComponent = () => {
   return `
-  <!-- feed -->
     <!-- searchbar and settings -->
     <div class="p-2 row wd-ma">
       <!-- searchbar border -->
