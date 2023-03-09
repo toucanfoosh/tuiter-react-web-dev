@@ -4,6 +4,11 @@ import HelloWorld from './labs/a6/hello-world';
 import Tuiter from "./tuiter";
 import { BrowserRouter } from "react-router-dom";
 import { Routes, Route } from "react-router";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faArrowUpFromBracket, faRetweet } from '@fortawesome/free-solid-svg-icons';
+import { faComment, faHeart } from '@fortawesome/free-regular-svg-icons';
+
+library.add(faHeart, faComment, faArrowUpFromBracket, faRetweet);
 
 function App() {
   return (
@@ -12,7 +17,7 @@ function App() {
         <Routes>
           <Route path="/labs" element={<Labs />} />
           <Route path="/hello" element={<HelloWorld />} />
-          <Route path="/tuiter" element={<Tuiter />} />
+          <Route path="/tuiter/*" element={<Tuiter />} />
         </Routes>
       </div>
     </BrowserRouter>

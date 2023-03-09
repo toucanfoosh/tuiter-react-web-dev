@@ -1,0 +1,28 @@
+[
+    {
+        "_id": 123,
+        "name": "Jolly Cat",
+        "handle": "jollycat",
+        "verified": true,
+        "time_since": "23h",
+        "profile_image": "jollycat.jpeg",
+        "text": "I'm a cat lol rofl haha.",
+        "image": "jollycat.jpeg",
+        "replies": 123,
+        "retweets": 456,
+        "likes": 789
+    },
+    {
+        "_id": 456,
+        "name": "Nick",
+        "handle": "nick",
+        "verified": true,
+        "time_since": "16h",
+        "profile_image": "nick.jpeg",
+        "text": "ggs today everyone, my replays keep crashing but ill try and send the vod codes tomorrow, much closer games today we will get a win soon for sure, see yall on sunday (and maybe satuday will lyk) :)",
+        "image": "toucanfish.jpeg",
+        "replies": 123,
+        "retweets": 456,
+        "likes": 789
+    }
+]
