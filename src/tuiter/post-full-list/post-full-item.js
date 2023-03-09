@@ -22,7 +22,7 @@ const PostFullItem = (
     return (
         <div className="row">
             <div className="col-2 col-md-1">
-                <img className="rounded-circle" height={40} width={40} src={`./images/${post.profile_image}`} />
+                <img className="rounded-circle" height={40} width={40} src={`/tuiter/images/${post.profile_image}`} />
             </div>
             <div className="col-10 col-md-11">
                 <span className="fw-bold">{post.name} </span>
@@ -34,7 +34,7 @@ const PostFullItem = (
                     <span>{post.text}</span>
                 </div>
                 <div>
-                    <img className="rounded wd-image mt-3" src={`./images/${post.image}`} />
+                    <img className="rounded wd-image mt-3" src={`/tuiter/images/${post.image}`} />
                 </div>
                 <div className="mt-2 mb-2 row">
                     <div className="col-3">
