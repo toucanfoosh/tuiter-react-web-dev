@@ -1,0 +1,49 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { changeLikedValue } from "./tuits-reducer";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import './index.css';
+
+
+function isLiked(liked) {
+    return (liked ? 'fas' : 'far');
+}
+
+const TuitStats = ({ stats }) => {
+    const dispatch = useDispatch();
+
+    const changeLikedClickHandler = (stats) => {
+        dispatch(changeLikedValue(stats))
+    }
+
+    return (
+        <div className="mt-2 mb-2 row">
+            <div className="col-3">
+                <Link className="text-secondary wd-link" to="#">
+                    <FontAwesomeIcon icon="fa-regular fa-comment" />
+                    <span className="ms-sm-1 ms-md-3">{stats.replies}</span>
+                </Link>
+            </div>
+            <div className="col-3">
+                <Link className="text-secondary wd-link" to="#">
+                    <FontAwesomeIcon icon="fa-solid fa-retweet" />
+                    <span className="ms-sm-1 ms-md-3">{stats.retuits}</span>
+                </Link>
+            </div>
+            <div className="col-3">
+                <Link onClick={() => changeLikedClickHandler(stats)} className="text-secondary wd-link" to="#">
+                    <FontAwesomeIcon icon={`fa-heart ${isLiked(stats.liked)}`} className={`${stats.liked ? 'wd-liked' : ''}`} />
+                    <span className="ms-sm-1 ms-md-3">{stats.likes}</span>
+                </Link>
+            </div>
+            <div className="col-3">
+                <Link className="text-secondary wd-link" to="#">
+                    <FontAwesomeIcon icon="fa-solid fa-arrow-up-from-bracket" />
+                </Link>
+            </div>
+        </div>
+    );
+};
+
+export default TuitStats
