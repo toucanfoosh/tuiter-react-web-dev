@@ -1,0 +1,15 @@
+{
+    "firstName": "Jose",
+    "lastName": "Annunziato",
+    "handle": "jannunzi",
+    "profilePicture": "billie.jpeg",
+    "bannerPicture": "guitarsongs.png",
+    "bio": "Faculty, Software Engineer, AI, Space, and renewable enthusiast. Retuits and likes are not endorsements.",
+    "website": "youtube.com/webdevtv",
+    "location": "Boston, MA",
+    "dateOfBirth": "2002-12-30",
+    "dateJoined": "1/2020",
+    "followingCount": 123,
+    "followersCount": 234,
+    "numTuits": 345
+}

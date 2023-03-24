@@ -4,13 +4,12 @@ import HelloWorld from './labs/a6/hello-world';
 import Tuiter from "./tuiter";
 import { BrowserRouter } from "react-router-dom";
 import { Routes, Route } from "react-router";
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faArrowUpFromBracket, faRetweet, faHeart as fasHeart } from '@fortawesome/free-solid-svg-icons';
-import { faComment, faHeart } from '@fortawesome/free-regular-svg-icons';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { far } from '@fortawesome/free-regular-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
 
-
-library.add(faHeart, fasHeart, faComment, faArrowUpFromBracket, faRetweet);
-
+library.add(fas, far, fab)
 function App() {
   return (
     <BrowserRouter>
