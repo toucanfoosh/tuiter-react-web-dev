@@ -20,7 +20,7 @@ const EditProfileComponent = () => {
                 <Link onClick={() => { dispatch(changeUser(currentUser)) }} to="/tuiter/profile" className="col-2 btn btn-sm btn-outline-secondary rounded-pill">Save</Link>
             </div>
 
-            <img className="p-0 mt-2 img-fluid wd-banner" src={`./images/${user.bannerPicture}`} />
+            <img className="p-0 mt-2 img-fluid wd-banner" height={100} src={`./images/${user.bannerPicture}`} />
             <div className="mb-2 row">
                 <div className="col-9">
                     <img className="p-1 mt-2 img-fluid wd-profile rounded-circle" src={`./images/${user.profilePicture}`} />
