@@ -16,7 +16,7 @@ const WhatsHappening = () => {
             handle: "@hammond",
             likes: 0,
             retuits: 0,
-            comments: 0
+            replies: 0
         }
         dispatch(createTuitThunk(newTuit));
     }
