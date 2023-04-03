@@ -1,0 +1,16 @@
+.wd-image {
+    height: auto;
+    width: 100%;
+}
+
+.wd-link {
+    text-decoration: none;
+}
+
+.wd-liked {
+    color: red;
+}
+
+.wd-disliked {
+    color: rgb(0, 123, 255);
+}
