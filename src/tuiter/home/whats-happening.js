@@ -13,7 +13,10 @@ const WhatsHappening = () => {
             username: "hammond",
             image: "hammond.jpeg",
             time: "1m",
-            handle: "@hammond"
+            handle: "@hammond",
+            likes: 0,
+            retuits: 0,
+            comments: 0
         }
         dispatch(createTuitThunk(newTuit));
     }
