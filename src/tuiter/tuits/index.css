@@ -11,6 +11,6 @@
     color: red;
 }
 
-.wd-liked {
-    color: aqua;
+.wd-disliked {
+    color: rgb(0, 123, 255);
 }
