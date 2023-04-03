@@ -1,10 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { changeLikedValue } from "./tuits-reducer";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { updateTuitThunk } from "../../services/tuits-thunks";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './index.css';
-
 
 function isLiked(liked) {
     return (liked ? 'fas' : 'far');
@@ -14,7 +13,9 @@ const TuitStats = ({ stats }) => {
     const dispatch = useDispatch();
 
     const changeLikedClickHandler = (stats) => {
-        dispatch(changeLikedValue(stats))
+        const updatedLikes = stats.liked ? stats.likes - 1 : stats.likes + 1;
+        const updatedStats = { ...stats, likes: updatedLikes, liked: !stats.liked };
+        dispatch(updateTuitThunk(updatedStats));
     }
 
     return (
@@ -33,7 +34,7 @@ const TuitStats = ({ stats }) => {
             </div>
             <div className="col-3">
                 <Link onClick={() => changeLikedClickHandler(stats)} className="text-secondary wd-link" to="#">
-                    <FontAwesomeIcon icon={`fa-heart ${isLiked(stats.liked)}`} className={`${stats.liked ? 'wd-liked' : ''}`} />
+                    <FontAwesomeIcon icon={[`${isLiked}`, 'heart']} className={`${stats.liked ? 'wd-liked' : ''}`} />
                     <span className="ms-sm-1 ms-md-3">{stats.likes}</span>
                 </Link>
             </div>
@@ -46,4 +47,4 @@ const TuitStats = ({ stats }) => {
     );
 };
 
-export default TuitStats
+export default TuitStats;
