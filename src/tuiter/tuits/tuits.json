@@ -1,0 +1,44 @@
+[
+    {
+        "_id": 123,
+        "topic": "Space",
+        "userName": "SpaceX",
+        "time": "2h",
+        "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
+        "image": "billie.jpeg",
+        "liked": true,
+        "replies": 123,
+        "retuits": 432,
+        "likes": 2345,
+        "handle": "@spacex",
+        "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
+    },
+    {
+        "_id": 234,
+        "topic": "Funny",
+        "userName": "Meme",
+        "time": "2h",
+        "title": "Funny Cat",
+        "image": "bongocat.png",
+        "liked": false,
+        "replies": 123,
+        "retuits": 432,
+        "likes": 2345,
+        "handle": "@meme",
+        "tuit": "Here is a funny cat picture, please laugh, is meme time"
+    },
+    {
+        "_id": 345,
+        "topic": "Music",
+        "userName": "Toucan",
+        "time": "2h",
+        "title": "Top 10 best music releases of the decade",
+        "image": "pikachu.png",
+        "liked": true,
+        "replies": 123,
+        "retuits": 432,
+        "likes": 2345,
+        "handle": "@toucan",
+        "tuit": "See the latest articles from the top 10 best music releases of the decade"
+    }
+]
